@@ -1,44 +1,32 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import './Training.scss';
+import React from 'react'
+import './Training.scss'
+
+import {Link} from 'react-router-dom'
+
+// import Pod from '../../assets/pod.jpg'
+// import Moon from '../../assets/moon.jpg'
 
 const Training = () => {
-    const[click, setClick] = useState(false)
-    const handleClick = () => setClick(!click)
-
-    const [color, setColor] = useState(false)
-        const changeColor =() => {
-            if(window.scrollY >= 100) {
-                setColor(true)
-            } else {
-                setColor(false)
-            }
-        }
-
-        window.addEventListener('scroll', changeColor)
+    const Pod = '';
+    const Moon = '';
 
     return (
-        <div className={color ? 'header header-bg' : 'header'}>
-           <Link to='/'><h1>GLX TRVL</h1></Link> 
-           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-               <li>
-                   <Link to='/'>Home</Link>
-               </li>
-               <li>
-                   <Link to='/pricing'>Pricing</Link>
-               </li>
-               <li>
-                   <Link to='/training'>Training</Link>
-               </li>
-               <li>
-                   <Link to='/contact'>Contact</Link>
-               </li>
-           </ul>
-           <div className='hamburger' onClick={handleClick}>
-            {click ? (<FaTimes size={20} style={{color: '#fff'}} />) : (<FaBars size={20} style={{color: '#fff'}} />)}
-               
-           </div>
+        <div className='training'>
+            <div className='left'>
+                <h1>Training</h1>
+                <p>Thorough training is a necessity when traveling to space. We offer all inclusive training for pre-flight and in-flight scenarios.</p>
+                <Link to='/contact'><button className='btn'>Contact</button></Link>
+            </div>
+            <div className='right'>
+                <div className='img-container'>
+                    <div className='image-stack top'>
+                        <img src={Moon} className='img' alt='' />
+                    </div>
+                    <div className='image-stack bottom'>
+                        <img src={Pod} className='img' alt='' />
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

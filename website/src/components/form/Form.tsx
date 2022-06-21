@@ -1,44 +1,20 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import './Form.scss';
+import React from 'react'
+import './Form.scss'
 
 const Form = () => {
-    const[click, setClick] = useState(false)
-    const handleClick = () => setClick(!click)
-
-    const [color, setColor] = useState(false)
-        const changeColor =() => {
-            if(window.scrollY >= 100) {
-                setColor(true)
-            } else {
-                setColor(false)
-            }
-        }
-
-        window.addEventListener('scroll', changeColor)
-
     return (
-        <div className={color ? 'header header-bg' : 'header'}>
-           <Link to='/'><h1>GLX TRVL</h1></Link> 
-           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-               <li>
-                   <Link to='/'>Home</Link>
-               </li>
-               <li>
-                   <Link to='/pricing'>Pricing</Link>
-               </li>
-               <li>
-                   <Link to='/training'>Training</Link>
-               </li>
-               <li>
-                   <Link to='/contact'>Contact</Link>
-               </li>
-           </ul>
-           <div className='hamburger' onClick={handleClick}>
-            {click ? (<FaTimes size={20} style={{color: '#fff'}} />) : (<FaBars size={20} style={{color: '#fff'}} />)}
-               
-           </div>
+        <div className='form'>
+            <form>
+                <label>Your Name</label>
+                <input type='text'></input>
+                <label>Email</label>
+                <input type='email'></input>
+                <label>Subject</label>
+                <input type='text'></input>
+                <label>Details</label>
+                <textarea placeholder='Type a short message here' />
+                <button className='btn'>Submit</button>
+            </form>
         </div>
     )
 }
