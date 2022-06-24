@@ -1,9 +1,9 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import './TodoItem.scss'
 
 const TodoItem = ({ item, toggleItem }) => {
     const { id, task, completed } = item;
-    const checkInputRef = useRef();
+
     const handleTodoClick = () => {
       toggleItem(id);
     }
