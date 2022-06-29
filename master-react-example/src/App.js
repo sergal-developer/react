@@ -1,8 +1,9 @@
 import './App.css';
-import { Component1 } from './components/Component1';
-import { SegundoComponente } from './components/SegundoComponente';
-import { TercerComponente } from './components/TercerComponente';
-import { EventosComponente } from './components/EventosComponente';
+// import { Component1 } from './components/Component1';
+// import { SegundoComponente } from './components/SegundoComponente';
+// import { TercerComponente } from './components/TercerComponente';
+// import { EventosComponente } from './components/EventosComponente';
+import { EstadoComponente } from './components/EstadoComponente';
 
 function App() {
   let fichaMedica = {
@@ -14,12 +15,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <EventosComponente />
-        <TercerComponente
-          ficha={ fichaMedica }
-        />
-        <SegundoComponente />
-        <Component1 />
+        <EstadoComponente />
       </header>
     </div>
   );
