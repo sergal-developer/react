@@ -9,14 +9,6 @@ export const EventosComponente = (props) => {
         alert(`${nombre}, has dado doble click al boton`);
     }
 
-    const handlerMouseEnter = (e, nombre) => {
-        alert(`${nombre}, has entrado a la caja `);
-    }
-
-    const handlerMouseLeave = (e, nombre) => {
-        alert(`${nombre}, has salido a la caja `);
-    }
-
     const handlerMouse = (e, accion, nombre) => {
         console.log(`${nombre}, has ${accion} a la caja `);
     }

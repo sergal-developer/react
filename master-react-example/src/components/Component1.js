@@ -1,8 +1,6 @@
 import React from 'react'
 
 export const Component1 = () => {
-    let nombre = "sergio";
-    const web = "sergio.g.com";
     let usuario = {
         nombre: 'Sergio',
         apellidos: 'Gallegos',
