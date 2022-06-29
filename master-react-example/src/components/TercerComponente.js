@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const TercerComponente = ({nombre, apellidos, ficha}) => {
+export const TercerComponente = ({nombre = 'sergio', apellidos = 'gallegos', ficha}) => {
   return (
     <div>
         <h1>Comunicacion entre componentes</h1>
@@ -20,7 +20,12 @@ export const TercerComponente = ({nombre, apellidos, ficha}) => {
 
 
 TercerComponente.propTypes = {
-    nombre: PropTypes.string.isRequired,
+    nombre: PropTypes.string,
     apellidos: PropTypes.string,
     ficha: PropTypes.object
+}
+
+TercerComponente.defaultProps = {
+    nombre: 'Esteban',
+    apellidos: 'Martinez'
 }

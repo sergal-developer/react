@@ -14,8 +14,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <TercerComponente 
-          apellidos="gallegos"
+        <TercerComponente
           ficha={ fichaMedica }
         />
         <SegundoComponente />
