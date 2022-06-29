@@ -5,3 +5,10 @@
   padding: 30px;
 }
 
+.caja {
+  width: 200px;
+  height: 200px;
+  border: 2px solid gray;
+  text-align: center;
+  line-height: 200px;
+}
