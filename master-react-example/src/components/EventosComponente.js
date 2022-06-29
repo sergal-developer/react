@@ -21,6 +21,10 @@ export const EventosComponente = (props) => {
         console.log(`${nombre}, has ${accion} a la caja `);
     }
 
+    const handlerFocusBlur = (e, accion) => {
+        console.log(`Estas ${ accion } del input`);
+    }
+
     return (
         <div>
             <button onClick={e => handlerClick(e, 'Sergio')}> Dame Click</button>
@@ -30,6 +34,13 @@ export const EventosComponente = (props) => {
             <div className='caja'
                 onMouseEnter={e => handlerMouse(e, 'Entrado', 'Sergio')}
                 onMouseLeave={e => handlerMouse(e, 'Salido', 'Sergio')}> Elemento con evento mouse </div>
+
+            <hr />
+
+            <input type="text" 
+                onFocus={ e => handlerFocusBlur(e, 'Dentro') }
+                onBlur={ e => handlerFocusBlur(e, 'Fuera') }
+                placeholder="Introduce tu nombre" />
         </div>
     )
 }
