@@ -13,6 +13,9 @@ function App() {
        
        
       <Component1 />
+      <Component1 />
+      <Component1 />
+      <Component1 />
       </header>
     </div>
   );
