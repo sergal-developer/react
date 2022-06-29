@@ -10,11 +10,11 @@ function App() {
     grupoSanguineo: "0-",
     estado: 'Normal'
   }
+  const nombre = 123;
   return (
     <div className="App">
       <header className="App-header">
         <TercerComponente 
-          nombre="Sergio"
           apellidos="gallegos"
           ficha={ fichaMedica }
         />
