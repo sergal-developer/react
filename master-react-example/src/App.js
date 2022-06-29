@@ -1,20 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import { Component1 } from './components/Component1';
+import { SegundoComponente } from './components/SegundoComponente';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-       
-       
-      <Component1 />
-      <Component1 />
-      <Component1 />
+      <SegundoComponente />
       <Component1 />
       </header>
     </div>
