@@ -3,6 +3,7 @@ import './App.css';
 import { Component1 } from './components/Component1';
 import { SegundoComponente } from './components/SegundoComponente';
 import { TercerComponente } from './components/TercerComponente';
+import { EventosComponente } from './components/EventosComponente';
 
 function App() {
   let fichaMedica = {
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <EventosComponente />
         <TercerComponente
           ficha={ fichaMedica }
         />
