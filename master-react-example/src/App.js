@@ -1,6 +1,7 @@
 import './App.css';
-import { AjaxComponent } from './components/AjaxComponent';
-import { EfectosComponet } from './components/EfectosComponet';
+// import { AjaxComponent } from './components/AjaxComponent';
+// import { EfectosComponet } from './components/EfectosComponet';
+import { FormularioComponet } from './components/FormularioComponet';
 // import { Ejercicio1Componet } from './components/Ejercicio1Componet';
 // import { Component1 } from './components/Component1';
 // import { SegundoComponente } from './components/SegundoComponente';
@@ -20,8 +21,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <EfectosComponet user={ usuario } ficha={ fichaMedica }/>
-        <AjaxComponent />
+        <FormularioComponet />
       </header>
     </div>
   );
