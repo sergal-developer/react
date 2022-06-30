@@ -1,4 +1,5 @@
 import './App.css';
+import { AjaxComponent } from './components/AjaxComponent';
 import { EfectosComponet } from './components/EfectosComponet';
 // import { Ejercicio1Componet } from './components/Ejercicio1Componet';
 // import { Component1 } from './components/Component1';
@@ -19,7 +20,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <EfectosComponet user={ usuario } />
+        <EfectosComponet user={ usuario } ficha={ fichaMedica }/>
+        <AjaxComponent />
       </header>
     </div>
   );
