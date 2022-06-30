@@ -11,3 +11,11 @@ body {
   text-align: center;
   line-height: 200px;
 }
+
+.label {
+  background: blue;
+  padding: 10px;
+}
+.label.label-green {
+  background: green;
+}

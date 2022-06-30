@@ -1,5 +1,6 @@
 import './App.css';
-import { Ejercicio1Componet } from './components/Ejercicio1Componet';
+import { EfectosComponet } from './components/EfectosComponet';
+// import { Ejercicio1Componet } from './components/Ejercicio1Componet';
 // import { Component1 } from './components/Component1';
 // import { SegundoComponente } from './components/SegundoComponente';
 // import { TercerComponente } from './components/TercerComponente';
@@ -13,12 +14,12 @@ function App() {
     estado: 'Normal'
   }
 
-  let year = 1988;
+  let usuario = 'Sergio Gallegos';
 
   return (
     <div className="App">
       <header className="App-header">
-        <Ejercicio1Componet year={ year } />
+        <EfectosComponet user={ usuario } />
       </header>
     </div>
   );
