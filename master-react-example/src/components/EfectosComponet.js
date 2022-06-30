@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import { AvisoComponent } from './AvisoComponent';
 
 export const EfectosComponet = (prop) => {
   const [user, setuser] = useState(prop.user || '');
@@ -7,8 +8,12 @@ export const EfectosComponet = (prop) => {
   const [counter, setCounter] = useState(0);
 
   useEffect(() => {
-    console.log(`has modificado el usuario ${ counter } veces.`);
+    console.log(`has modificado el usuario ${counter} veces.`);
     setCounter(counter + 1);
+
+    return () => {
+
+    }
   }, [user])
 
   const updateUsername = (e, username = null) => {
@@ -27,7 +32,7 @@ export const EfectosComponet = (prop) => {
   return (
     <>
       <h1>HOOK useEffect </h1>
-      <strong className={ counter >= 10 ? 'label label-green': 'label'}>{user}</strong>
+      <strong className={counter >= 10 ? 'label label-green' : 'label'}>{user}</strong>
       <strong className='date'>{date}</strong>
 
       <form>
@@ -37,9 +42,9 @@ export const EfectosComponet = (prop) => {
 
       </form>
 
-      
       <button onClick={newDate}>Actualiza Fecha</button>
 
+      {user === "SERGIO" && <AvisoComponent />}
 
     </>
   )
