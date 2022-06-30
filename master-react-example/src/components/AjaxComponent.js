@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 
 export const AjaxComponent = () => {
     const [usuarios, setUsuarios] = useState([]);
+    const [cargando, setCargando] = useState(true);
+    const [errores, setErrores] = useState('');
 
     // Metodos genericos
     const getUsuarios = () => {
@@ -42,30 +44,60 @@ export const AjaxComponent = () => {
                 resultado_final => {
                     setUsuarios(resultado_final.data);
                 },
-                error => { console.log(error)}
+                error => { console.log(error) }
             )
     }
 
-    const getUsuariosAsync = async() => {
-        const peticion = await fetch('https://reqres.in/api/users?page=2');
-        const {data} = await peticion.json();
-        console.log('data: ', data);
-        if ( data ) {
-            setUsuarios(data);
-        }
+    const getUsuariosAsync = () => {
+
+        setTimeout(async () => {
+            try {
+                const peticion = await fetch('https://reqres.in/api/users?page=2');
+                const { data } = await peticion.json();
+                console.log('data: ', data);
+                if (data) {
+                    setUsuarios(data);
+                    setCargando(false);
+                    setErrores('');
+                }
+            } catch (error) {
+                setErrores(error.message);
+            }
+        }, 1000);
     }
 
-    return (
-        <div>
-            <h2>Listado de Usuario por AJAX</h2>
+    
+    if (errores !== '') {
+        return (
+            <div className='cargando'>
+                { errores }
+            </div>
+        )
+    } else if (cargando) {
+        //Cuando todo esta cargando
+        return (
+            <div className='cargando'>
+                Cargando Datos...
+            </div>
+        )
+    } else {
+        // cuando todo esta bien
+        return (
+            <div>
+                <h2>Listado de Usuario por AJAX</h2>
 
-            <ol className='usuarios'>
-                {
-                    usuarios.map((usuario, index) => {
-                        return <li key={usuario.id}>{usuario.first_name} {usuario.last_name}</li>
-                    })
-                }
-            </ol>
-        </div>
-    )
+                <ol className='usuarios'>
+                    {
+                        usuarios.map((usuario, index) => {
+                            return <li key={usuario.id}>
+                                <img width="20" src={usuario.avatar} />
+                                {usuario.first_name} {usuario.last_name}
+
+                            </li>
+                        })
+                    }
+                </ol>
+            </div>
+        )
+    }
 }
