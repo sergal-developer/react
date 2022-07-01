@@ -1,4 +1,6 @@
 import './App.scss';
+import { Cards } from './components/Cards';
+import { Menu } from './components/Menu';
 
 function App() {
   const peliculas = [
@@ -13,64 +15,33 @@ function App() {
     { id: 9, name: 'Red', score: 78, cover: 'https://www.themoviedb.org/t/p/w220_and_h330_face/hUupIkIKPpNLYniPGRxRpEQFrX3.jpg' },
     { id: 10, name: 'Spider-Man: No Way Home', score: 78, cover: 'https://www.themoviedb.org/t/p/w220_and_h330_face/osYbtvqjMUhEXgkuFJOsRYVpq6N.jpg' }
   ];
+
+  const menus = [
+    { id: 1, name: 'Inicio' },
+    { id: 2, name: 'Peliculas' },
+    { id: 3, name: 'Blog' },
+    { id: 4, name: 'Contacto' },
+  ];
+
+
   return (
     <>
       <div className="container">
         <header>
           <div className="logo">MOVIEFLIX</div>
-          <div className="menus">
-            <div className="item">Inicio</div>
-            <div className="item">Peliculas</div>
-            <div className="item">Blog</div>
-            <div className="item">Contacto</div>
-
-            <div className="item">
-              <input type='text' placeholder='Buscar ...' name='search' />
-            </div>
-          </div>
+          <Menu menus={menus} />
 
         </header>
         <main className="container_main">
           <div className="container_inner">
 
-            <div className='cards'>
-              <div className="cards_item first">
-                <div className="name">
-                  <form>
-                    <input type='text' placeholder='title' name='title' />
-                    <input type='text' placeholder='score' name='score' />
-                    <input type='text' placeholder='cover' name='cover' />
-                    <textarea placeholder='description' name='description'></textarea>
-                    <button type='submit' name='save'>Guardar</button>
-                  </form>
-                </div>
-              </div>
-              {
-                peliculas.map((peli) => {
-                  return (
-                    <div className="cards_item" key={peli.id}>
-                      <div className='cover'> <img src={peli.cover} /> </div>
-                      <div className="name">
-                        {peli.name}
-                      </div>
-                      <div className="controls">
-                        <div className="action">Editar</div>
-                        <div className="action">Borrar</div>
-                        <div className="action">Ver</div>
-                      </div>
-                    </div>
-                  )
-                })
-              }
-
-            </div>
-
+            <Cards list={peliculas} />
 
           </div>
 
         </main>
         <footer className="footer">
-          © App React - <a href="">sergiogallegos.com</a>
+          © App React - <a href='https://fonts.google.com/'>sergiogallegos.com</a>
         </footer>
       </div>
     </>
