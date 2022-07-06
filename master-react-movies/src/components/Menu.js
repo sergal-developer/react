@@ -1,8 +1,7 @@
 import React from 'react'
 import { Searcher } from './Searcher';
 
-export const Menu = (props) => {
-    const menus = props.menus || [];
+export const Menu = ({ menus, list, setList }) => {
 
     return (
         <>
@@ -16,7 +15,7 @@ export const Menu = (props) => {
                 }
 
                 <div className="item">
-                    <Searcher />
+                    <Searcher list={ list } setList={ setList }  />
                 </div>
             </div>
         </>

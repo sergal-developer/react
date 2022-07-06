@@ -33,7 +33,7 @@ function App() {
       <div className="container remixicon">
         <header>
           <div className="logo">MOVIEFLIX</div>
-          <Menu menus={menus} />
+          <Menu menus={menus} list={ list } setList={ setList }  />
 
         </header>
         <main className="container_main">
