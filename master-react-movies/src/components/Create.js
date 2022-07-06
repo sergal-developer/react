@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { getMovieLS, saveMovieLS } from '../common/helpers/moviesStorage';
 
-export const Create = () => {
+export const Create = ({ setList }) => {
     const title = 'Agregar pelicula';
     const [createState, setcreateState] = useState(false);
     const [movieState, setMovieState] = useState({});
@@ -29,17 +29,19 @@ export const Create = () => {
         let _movie = {
             id: new Date().getTime(),
             title: data.title.value,
-            score: data.score.value,
+            score: data.score.value || 90,
             cover: data.cover.value,
-            description: data.description.value,
+            description: data.description.value || data.title.value,
         }
 
         movies.push(_movie);
-        console.log('movieState', movieState);
 
         setMovieState(movies);
         saveMovieLS(moviesListState);
-        setcreateState(false)
+        setcreateState(false);
+        setList(elementos => {
+            return [...elementos, _movie];
+        })
     }
 
     return (

@@ -59,6 +59,7 @@
 
     &.first {
       padding: 20px;
+
       form {
         display: flex;
         flex-direction: column;
@@ -75,5 +76,80 @@
         }
       }
     }
+
+    &.modal {
+      position: absolute;
+      width: 50%;
+      background: white;
+      padding: 5%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+
+    .cover {
+      max-width: 100%;
+    }
+
+    .controls {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      .action {
+        padding: 10px;
+      }
+
+      button {
+        padding: 10px;
+        margin-right: 10px;
+      }
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+
+      form,
+      .cover {
+        width: 50%;
+
+        > * {
+          width: 100%;
+          margin-bottom: 10px;
+          padding: 10px;
+        }
+
+        >input,
+        >textarea {
+          width: 91%;
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  /* Border */
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+
+  .modal__header {
+    display: flex;
+    justify-content: space-between;
+    /* Border */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+
+  .modal__footer {
+    display: flex;
+    /* Push the buttons to the right */
+    justify-content: flex-end;
+    /* Border */
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
   }
 }

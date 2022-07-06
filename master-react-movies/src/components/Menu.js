@@ -10,7 +10,7 @@ export const Menu = (props) => {
                 {
                     menus.map((menu) => {
                         return (
-                            <div className="item" key={menu.id}>{menu.name}</div>
+                            <div className="item" key={menu.id}> <i className="ri-home-line"></i> {menu.name}</div>
                         )
                     })
                 }

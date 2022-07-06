@@ -1,8 +1,12 @@
+import { useState } from 'react';
 import './App.scss';
 import { Cards } from './components/Cards';
 import { Menu } from './components/Menu';
 
 function App() {
+
+  const [list, setList] = useState([]);
+
   const peliculas = [
     { id: 1, name: 'Doctor Strange en el multiverso de la locura', score: 78, cover: 'https://www.themoviedb.org/t/p/w220_and_h330_face/uOnutpXJdDWyWzUCkApkahPSKuy.jpg' },
     { id: 2, name: 'Animales fantásticos: Los secretos de Dumbledore', score: 78, cover: 'https://www.themoviedb.org/t/p/w220_and_h330_face/yOeuJdwag4bAlnvgrdweRoiuXGC.jpg' },
@@ -26,7 +30,7 @@ function App() {
 
   return (
     <>
-      <div className="container">
+      <div className="container remixicon">
         <header>
           <div className="logo">MOVIEFLIX</div>
           <Menu menus={menus} />
@@ -35,7 +39,7 @@ function App() {
         <main className="container_main">
           <div className="container_inner">
 
-            <Cards list={peliculas} />
+            <Cards list={ list } setList={ setList }  />
 
           </div>
 
