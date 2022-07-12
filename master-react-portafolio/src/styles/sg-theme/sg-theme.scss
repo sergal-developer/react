@@ -1,0 +1,25 @@
+@import 'componets/reset.scss';
+@import 'componets/variables';
+@import 'componets/components.scss';
+
+body {
+    font-family: $font-family-base;
+    font-size: 16px;
+    margin: 0;
+}
+
+.hidden, .collapse {
+    display: none;
+}
+
+a {
+    color: inherit;
+    text-transform: none;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+* { box-sizing: border-box; }

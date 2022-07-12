@@ -1,0 +1,63 @@
+
+.section {
+    
+    &.hero {
+        background: #FFEFAE;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        line-height: 1.5;
+        
+
+        .title {
+            font-size: 170px;
+        }
+        .subtitle {
+            font-size: 25px;
+            font-weight: lighter;
+            text-align: right;
+        }
+
+        .hero-container {
+            text-align: center;
+            padding: 0 10%;
+            
+        }
+    }
+
+    &.resume {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        .title {
+            font-size: 40px;
+            padding-bottom: 50px;
+        }
+        .subtitle {
+            font-size: 25px;
+            font-weight: lighter;
+            text-align: right;
+        }
+    }
+
+    &.withImage {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        .container {
+            width: 50%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            &.image {
+                // width: 40%;
+                padding-left: 40px;
+            }
+        }
+    }
+}

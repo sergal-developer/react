@@ -1,0 +1,28 @@
+@import 'variables';
+
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+    padding: $padding-default;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-brand {
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .nav-toggler {
+        padding: 10px 15px;
+    }
+
+    .nav-container {
+
+        .nav-item {
+            padding-left: 10px;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+
+// Google web fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+// Icon Font Stylesheet
+// @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css');
+// @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css');
+@import url('https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css');
+
+// Libraries Stylesheet
+
+// Customized Bootstrap Stylesheet
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css');
+// @import './styles/bootstrap.min.css';
+
+// Template Stylesheet
+@import './styles/JONSON/style.scss';
+
+
+
+* * {
+    outline: 1px solid rgba(238, 130, 238, 0.377);
+}
