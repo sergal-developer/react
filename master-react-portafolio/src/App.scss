@@ -61,3 +61,24 @@
         }
     }
 }
+
+.projectCover {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 0 0 10 #ddd;
+
+    img {
+        width: 100%;
+        transition: all 300ms;
+    }
+
+    &:hover {
+        img {
+            width: 150%;
+            margin-right: 30%;
+        }
+    }
+
+
+}

@@ -1,10 +1,18 @@
 import './App.scss';
 import { RouterApp } from './router/RouterApp';
 
+import expertises from './data/expertises.json';
+import projects from './data/projects.json';
+
 function App() {
+
+  let data = {
+    expertises: expertises,
+    projects: projects
+  }
   return (
     <>
-      <RouterApp />
+      <RouterApp data={ data } />
       {/* <!-- Spinner  --> */}
 
 

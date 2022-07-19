@@ -1,10 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-export const Portfolio = () => {
+export const Portfolio = ({ expertises, projects }) => {
     const navigate = useNavigate();
 
-    const expertises = [
+    const _expertises = [
         { id: 1, title: 'Front-end Design', content: 'Maquetacion e implementacion de componentes previamente diseñados, con apoyo de frameworks basados en Javascript' },
         { id: 2, title: 'Back-end Developer', content: 'Creacion de servicios y apis de consumo' },
         { id: 3, title: 'Windows Azure', content: 'Implementacion de planes de despliege y uso de recursos para Windows Azure' },
@@ -12,7 +12,7 @@ export const Portfolio = () => {
         { id: 5, title: 'Data Access', content: 'Creacion y administracion de bases de datos como SQL y postgress' }
     ]
 
-    const projects = [
+    const _projects = [
         {
             id: 1, name: 'portal1', title: 'Portal Adrisa Seguros', content: 'Portal de administracion de seguros y polizas, desarrollo modulo de finanzas y reportes', period: [new Date('01/01/2012'), new Date('01/12/2013')],
             techs: [{ id: 11, name: 'Windows Azure', logo: '' }, { id: 12, name: 'ASP.NET', logo: '' }, { id: 13, name: 'C#', logo: '' }, { id: 14, name: 'JQuery', logo: '' }, { id: 15, name: 'Cristal Reports', logo: '' }, { id: 16, name: 'SQL', logo: '' }]
@@ -56,7 +56,7 @@ export const Portfolio = () => {
     ];
 
     const redirectDetaills = (e, item) => {
-        navigate(`/portafolio/${ item.name }`);
+        navigate(`/portafolio/${item.id}`);
     }
 
     return (
@@ -69,7 +69,7 @@ export const Portfolio = () => {
                             <div className="col-xl-12">
                                 {/* <!-- Hero Caption --> */}
                                 <div className="hero-cap pt-100">
-                                    <h2>My Protfolio</h2>
+                                    <h2>My Portfolio</h2>
                                 </div>
                             </div>
                         </div>
@@ -114,6 +114,9 @@ export const Portfolio = () => {
                                 <div className="section-tittle mb-60">
                                     <h2>Selected Portfolios</h2>
                                 </div>
+                                <div>
+                                    <input type="text" name="" value=""/>
+                                </div>
                             </div>
                         </div>
                         <div className="row justify-content-between">
@@ -122,9 +125,13 @@ export const Portfolio = () => {
                                     <>
                                         <div className="col-xl-5 ol-lg-6 col-lg-6 col-md-6 col-sm-6" key={project.id.toString()}>
                                             <div className="box snake mb-30">
+                                                <div className='projectCover'>
+                                                    <img src={project.preview} alt={project.preview} />
+                                                </div>
                                                 <h5>{project.title}</h5>
                                                 <div>{project.content}</div>
-                                                <div>{ JSON.stringify(project.period) }</div>
+
+                                                <div>{JSON.stringify(project.period)}</div>
                                                 <div>{
                                                     project.techs.map(tech => (
                                                         <>
@@ -135,7 +142,7 @@ export const Portfolio = () => {
                                                 </div>
 
                                                 <div>
-                                                    <button type="button" onClick={ e => redirectDetaills(e, project) }>Detalles</button>
+                                                    <button type="button" onClick={e => redirectDetaills(e, project)}>Detalles</button>
                                                 </div>
                                                 <div className="gallery-img small-img "></div>
                                                 {/* <div className="overlay">

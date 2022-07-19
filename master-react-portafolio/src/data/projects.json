@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1, "name": "portal1", "title": "Portal Adrisa Seguros", "content": "Portal de administracion de seguros y polizas, desarrollo modulo de finanzas y reportes", "preview": "https://i0.wp.com/www.technosap.com/wp-content/uploads/2018/10/sap-ps-project-system-integration-with-other-modules.jpg?fit=799%2C487&ssl=1",
+        "period": ["01/01/2012", "01/12/2013"],
+        "techs": [{ "id": 11, "name": "Windows Azure", "logo": "" }, { "id": 12, "name": "ASP.NET", "logo": "" }, { "id": 13, "name": "C#", "logo": "" }, { "id": 14, "name": "JQuery", "logo": "" }, { "id": 15, "name": "Cristal Reports", "logo": "" }, { "id": 16, "name": "SQL", "logo": "" }]
+    },
+    {
+        "id": 2, "name": "portal2", "title": "Portal Incidentes Embajada de EEUU", "content": "Portal de administracion de seguros y polizas, desarrollo modulo de finanzas y reportes", "preview": "https://i0.wp.com/www.technosap.com/wp-content/uploads/2018/10/sap-ps-project-system-integration-with-other-modules.jpg?fit=799%2C487&ssl=1",
+        "period": ["01/11/2013", "31/11/2013"],
+        "techs": [{ "id": 11, "name": "Windows Azure", "logo": "" }, { "id": 12, "name": "ASP.NET", "logo": "" }, { "id": 13, "name": "C#", "logo": "" }, { "id": 14, "name": "JQuery", "logo": "" }, { "id": 15, "name": "Cristal Reports", "logo": "" }, { "id": 16, "name": "SQL", "logo": "" }]
+    },
+    {
+        "id": 3, "name": "portal3", "title": "GMM Seguros", "content": "Portal de administracion de seguros y polizas, desarrollo modulo de finanzas y reportes", "preview": "https://i0.wp.com/www.technosap.com/wp-content/uploads/2018/10/sap-ps-project-system-integration-with-other-modules.jpg?fit=799%2C487&ssl=1",
+        "period": ["01/01/2014", "01/08/2014"],
+        "techs": [{ "id": 11, "name": "Windows Azure", "logo": "" }, { "id": 12, "name": "ASP.NET", "logo": "" }, { "id": 13, "name": "C#", "logo": "" }, { "id": 14, "name": "JQuery", "logo": "" }, { "id": 15, "name": "Cristal Reports", "logo": "" }, { "id": 16, "name": "SQL", "logo": "" }]
+    },
+    {
+        "id": 4, "name": "portal4", "title": "Blackboard Ultra", "content": "Sistema de Gestion de Aprendizaje Blackboard", "preview": "https://i0.wp.com/www.technosap.com/wp-content/uploads/2018/10/sap-ps-project-system-integration-with-other-modules.jpg?fit=799%2C487&ssl=1",
+        "period": ["01/08/2014", "01/12/2015"],
+        "techs": [{ "id": 11, "name": "Windows Azure", "logo": "" }, { "id": 12, "name": "ASP.NET", "logo": "" }, { "id": 13, "name": "C#", "logo": "" }, { "id": 14, "name": "JQuery", "logo": "" }, { "id": 15, "name": "Cristal Reports", "logo": "" }, { "id": 16, "name": "SQL", "logo": "" }]
+    },
+    {
+        "id": 5, "name": "portal5", "title": "Scholastic", "content": "Portal de administracion de seguros y polizas, desarrollo modulo de finanzas y reportes", "preview": "https://i0.wp.com/www.technosap.com/wp-content/uploads/2018/10/sap-ps-project-system-integration-with-other-modules.jpg?fit=799%2C487&ssl=1",
+        "period": ["01/09/2015", "01/10/2016"],
+        "techs": [{ "id": 11, "name": "Windows Azure", "logo": "" }, { "id": 12, "name": "ASP.NET", "logo": "" }, { "id": 13, "name": "C#", "logo": "" }, { "id": 14, "name": "JQuery", "logo": "" }, { "id": 15, "name": "Cristal Reports", "logo": "" }, { "id": 16, "name": "SQL", "logo": "" }]
+    },
+    {
+        "id": 6, "name": "portal6", "title": "Interapt", "content": "Portal de administracion de seguros y polizas, desarrollo modulo de finanzas y reportes", "preview": "https://i0.wp.com/www.technosap.com/wp-content/uploads/2018/10/sap-ps-project-system-integration-with-other-modules.jpg?fit=799%2C487&ssl=1",
+        "period": ["01/09/2016", "01/12/2016"],
+        "techs": [{ "id": 11, "name": "Windows Azure", "logo": "" }, { "id": 12, "name": "ASP.NET", "logo": "" }, { "id": 13, "name": "C#", "logo": "" }, { "id": 14, "name": "JQuery", "logo": "" }, { "id": 15, "name": "Cristal Reports", "logo": "" }, { "id": 16, "name": "SQL", "logo": "" }]
+    },
+    {
+        "id": 7, "name": "portal7", "title": "Ebay", "content": "Portal de administracion de seguros y polizas, desarrollo modulo de finanzas y reportes", "preview": "https://i0.wp.com/www.technosap.com/wp-content/uploads/2018/10/sap-ps-project-system-integration-with-other-modules.jpg?fit=799%2C487&ssl=1",
+        "period": ["01/07/2016", "01/04/2017"],
+        "techs": [{ "id": 11, "name": "Windows Azure", "logo": "" }, { "id": 12, "name": "ASP.NET", "logo": "" }, { "id": 13, "name": "C#", "logo": "" }, { "id": 14, "name": "JQuery", "logo": "" }, { "id": 15, "name": "Cristal Reports", "logo": "" }, { "id": 16, "name": "SQL", "logo": "" }]
+    },
+    {
+        "id": 8, "name": "portal8", "title": "Zaplabs LLC", "content": "Portal de administracion de seguros y polizas, desarrollo modulo de finanzas y reportes", "preview": "https://i0.wp.com/www.technosap.com/wp-content/uploads/2018/10/sap-ps-project-system-integration-with-other-modules.jpg?fit=799%2C487&ssl=1",
+        "period": ["01/03/2017", "01/07/2017"],
+        "techs": [{ "id": 11, "name": "Windows Azure", "logo": "" }, { "id": 12, "name": "ASP.NET", "logo": "" }, { "id": 13, "name": "C#", "logo": "" }, { "id": 14, "name": "JQuery", "logo": "" }, { "id": 15, "name": "Cristal Reports", "logo": "" }, { "id": 16, "name": "SQL", "logo": "" }]
+    },
+    {
+        "id": 9, "name": "portal9", "title": "Dell EMC", "content": "Portal de administracion de seguros y polizas, desarrollo modulo de finanzas y reportes", "preview": "https://i0.wp.com/www.technosap.com/wp-content/uploads/2018/10/sap-ps-project-system-integration-with-other-modules.jpg?fit=799%2C487&ssl=1",
+        "period": ["01/09/2017", "01/10/2017"],
+        "techs": [{ "id": 11, "name": "Windows Azure", "logo": "" }, { "id": 12, "name": "ASP.NET", "logo": "" }, { "id": 13, "name": "C#", "logo": "" }, { "id": 14, "name": "JQuery", "logo": "" }, { "id": 15, "name": "Cristal Reports", "logo": "" }, { "id": 16, "name": "SQL", "logo": "" }]
+    },
+    {
+        "id": 10, "name": "portal10", "title": "APX Glow", "content": "Portal de administracion de seguros y polizas, desarrollo modulo de finanzas y reportes", "preview": "https://i0.wp.com/www.technosap.com/wp-content/uploads/2018/10/sap-ps-project-system-integration-with-other-modules.jpg?fit=799%2C487&ssl=1",
+        "period": ["02/11/2017", "16/07/2022"],
+        "techs": [{ "id": 11, "name": "Windows Azure", "logo": "" }, { "id": 12, "name": "ASP.NET", "logo": "" }, { "id": 13, "name": "C#", "logo": "" }, { "id": 14, "name": "JQuery", "logo": "" }, { "id": 15, "name": "Cristal Reports", "logo": "" }, { "id": 16, "name": "SQL", "logo": "" }]
+    }
+]

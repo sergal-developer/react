@@ -1,0 +1,7 @@
+[
+    { "id": 1, "title": "Front-end Design", "content": "Maquetacion e implementacion de componentes previamente diseñados, con apoyo de frameworks basados en Javascript" },
+    { "id": 2, "title": "Back-end Developer", "content": "Creacion de servicios y apis de consumo" },
+    { "id": 3, "title": "Windows Azure", "content": "Implementacion de planes de despliege y uso de recursos para Windows Azure" },
+    { "id": 4, "title": "Interaction Design", "content": "Planeacion de efectos flujos y animaciones implementados en mockups de diseño" },
+    { "id": 5, "title": "Data Access", "content": "Creacion y administracion de bases de datos como SQL y postgress" }
+]
