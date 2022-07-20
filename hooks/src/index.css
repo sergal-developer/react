@@ -34,3 +34,21 @@ input, button {
 .fondoVerde {
   background: green;
 }
+
+.tareas-container{
+  width:80%;
+ }
+
+ input[type="text"],
+ input[type="submit"]{
+  padding:20px;
+  width:50%;
+ }
+
+input[type="submit"]{
+        width:15%;
+        background: green;
+        color:white;
+        font-weight:bold;
+        border:none;
+}
