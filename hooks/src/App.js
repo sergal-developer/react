@@ -1,13 +1,12 @@
 
 import './App.css';
-// import { Gestion } from './useMemo/Gestion';
-import { Tareas } from './useMemo/Tareas';
+import { EjemploEffect } from './uselayoutEffect/EjemploEffect';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Tareas />
+        <EjemploEffect />
       </header>
     </div>
   );

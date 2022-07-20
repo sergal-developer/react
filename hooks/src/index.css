@@ -52,3 +52,14 @@ input[type="submit"]{
         font-weight:bold;
         border:none;
 }
+
+
+
+#caja {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  width: 100px;
+  height: 100px;
+  background: blueviolet;
+}
