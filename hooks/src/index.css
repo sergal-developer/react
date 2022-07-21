@@ -19,7 +19,7 @@ form {
   flex-direction: column;
 }
 
-input, button {
+input, button, textarea {
   font-size: 18px;
   padding: 10px;
   margin-bottom: 5px;
@@ -46,7 +46,7 @@ input, button {
  }
 
 input[type="submit"]{
-        width:15%;
+        width:auto;
         background: green;
         color:white;
         font-weight:bold;

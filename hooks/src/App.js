@@ -1,12 +1,12 @@
 
 import './App.css';
-import { EjemploEffect } from './uselayoutEffect/EjemploEffect';
+import { EjemploReducers } from './useReducer/EjemploReducers';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <EjemploEffect />
+        <EjemploReducers />
       </header>
     </div>
   );
