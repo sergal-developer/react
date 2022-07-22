@@ -1,5 +1,5 @@
-.App {
-  text-align: center;
+body {
+  background: #ededed;
 }
 
 .App-logo {
@@ -35,4 +35,42 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header{
+  margin:0px;
+  width: 100%;
+  background: black;
+}
+
+.header nav{
+ background-color:black;
+}
+
+.header ul{
+  list-style:none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 30px;
+}
+
+.header ul li{
+  padding: 0 0 0 15px;
+}
+
+.header nav a{
+  color:white;
+  text-decoration:none;
+}
+.header nav a:hover {
+ color:lightblue;
+}
+
+section {
+  margin: 30px;
+  background: white;
+  box-shadow: 0 0 10px #c7c7c7;
+  border-radius: 5px;
+  padding: 30px;
 }
